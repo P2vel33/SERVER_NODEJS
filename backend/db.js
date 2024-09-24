@@ -4,7 +4,7 @@ const pool = new Pool({
     password:"afso_2020",
     host:"localhost",
     port:5432,
-    database:"server"
+    database:"new"
 })
 
 
