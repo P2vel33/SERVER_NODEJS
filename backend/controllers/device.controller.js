@@ -3,7 +3,7 @@ const YAML = require('json-to-pretty-yaml');
 const { createDevice, showDevices, showOneDevices, updateDevices, deleteDevices } = require("../services/device.service");
 
 
-class Controllers{
+class DeviceController{
     // async createDevice(req,res){
     //     const {address, netmask, next_id, type, name} = req.body
     //     const newDevice = await db.query(`insert into device values (default, $1, $2, $3, $4, $5) returning *`,
@@ -49,4 +49,4 @@ class Controllers{
     };
 }
 
-module.exports = new Controllers()
+module.exports = new DeviceController()

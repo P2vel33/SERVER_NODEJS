@@ -1,6 +1,6 @@
 const db = require("../db")
 
-class Services{
+class DeviceService{
     createDevice(type){
         return db.query(`insert into device values (default, $1) returning *`,[ type ]);
     }
@@ -23,4 +23,4 @@ class Services{
     
 }
 
-module.exports = new Services()
+module.exports = new DeviceService()
